@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortoFolio SuperKecil</title>
+  <style>
+    :root{
+      --darkblue: #2b5475;
+      --darkgrey: #2a2a2a;
+      --hovergrey: #333333;
+      --activegrey: #3f3f3f;
+    }
+    body{
+      margin: 0 0 0 0;
+      background-color: var(--darkgrey);
+    }
+    span.incompatible{
+      color: white;
+    }
+    div.left-bar{
+      display: inline-block;
+      position: absolute;
+      margin: 0 auto 0 0;
+      z-index: -1;
+
+      width: 300px;
+      height: 100%;
+    }
+    div.left-contents{
+      margin-left: 50px;
+    }
+    div.right-contents{
+      position: absolute;
+      margin: 120px auto auto 350px;
+      z-index: +1;
+
+      width: 410px;
+      height: 80%;
+    }
+    hr.left{
+      width: 80%;
+      margin: 0.5em auto 0.5em 0;
+
+      color: white;
+      background-color: white;
+
+      border: none;
+      height: 1px;
+    }
+    hr.right{
+      width: 355px;
+      margin: 0.5em auto 0.5em 0;
+
+      color: steelblue;
+      background-color: steelblue;
+
+      border: none;
+      height: 1px;
+    }
+    p{
+      border: solid 1px;
+      margin: 50px auto auto 0;
+      display: flex;
+      flex-direction: row;
+
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      
+      color: white;
+      width: 200px;
+      height: 250px;
+    }
+    img{
+      color: white;
+    }
+    button{
+      border: solid 2px;
+      border-radius: 10px;
+      margin: 70px auto 0 auto;
+
+      width: 150px;
+      height: 50px;
+      z-index: +2;
+
+      cursor: pointer;
+    }
+    .light{
+      border-color: steelblue;
+      background-color: white;
+      color: black;
+    }
+    button.light:hover{
+      background-color: gainsboro;
+    }
+    button.light:active{
+      background-color: silver;
+    }
+    .dark{
+      border-color: var(--darkblue);
+      background-color: var(--darkgrey);
+      color: white;
+    }
+    button.dark:hover{
+      background-color: var(--hovergrey);
+    }
+    button.dark:active{
+      background-color: var(--activegrey);
+    }
+    span.line{
+      text-decoration: 3px underline;
+      text-underline-offset: 7px; 
+    }
+    h1{
+      font: 3.3em "Bookman Old Style Light";
+      letter-spacing: 5px;
+    }
+    h2{
+      margin: 0;
+      font: 1.5em "Bookman Old Style Light";
+    }
+    h3{
+      font: 0.999em "Calibri";
+    }
+    ul{
+      font: 0.9em "Calibri Light";
+      width: 50px;
+    }
+    .ul    {width: 90px}
+    .white {color: white}
+    .bg-w  {background-color: white}
+    .blue  {color: steelblue}
+    .bg-b  {background-color: steelblue}
+    .black {color: black}
+    .bg-sb {background-color: var(--darkblue)}
+    .bg-l  {background-color: white}
+    .bg-d  {background-color: var(--darkgrey)}
+    @media screen and (max-height: 870px){
+      div.left-bar{
+        height: 900px;
+      }
+    }
+    @media screen and (max-width: 750px) and (min-height: 500px){
+      body{
+        height: 100%;
+      }
+      div.left.bar{
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="bg-l">
+  <div class="left-bar bg-b">
+    <span class="incompatible">
+      <strong title="Kalo pake HP bakal jelek banget UI nya">
+      Not compatible for every device
+      </strong>
+    </span>
+    <div class="left-contents">
+      <p title="Kalo mau, harus include file .jpg nya juga (malas)">
+        Gak bisa upload foto<br>
+      </p>
+      <img src="#" alt="Nurfa's Selfie" title="kosong kok, gak ada file nya">
+      <br><br><br>
+      <h2 class="white" title="Identity">
+        IDENTITAS
+      </h2>
+      <h3 class="white" title="nama lengkap dan status">
+        Nurfaizurrahman Nuh<br>
+        Mahasiswa Aktif FT UNS<br>
+      </h3>
+      <hr class="left">
+      <br style="margin-bottom: 0;">
+      <h2 class="white" title="Current Education">
+        PENDIDIKAN
+      </h2>
+      <h3 class="white" title="angkatan 2024 (baru)">
+        Universitas Sebelas Maret<br>
+        (2024 - Sekarang)<br>
+      </h3>
+      <hr class="left">
+      <br style="margin-bottom: 0;">
+      <h2 class="white" title="My Contacts">
+        KONTAK
+      </h2>
+      <h3 class="white" title="email, whatsapp, dan instagram">
+        nurfaizurrahman.nuh@gmail.com<br>
+        0813-5000-5107 (WA)<br>
+        @nurrnnuh (IG)<br>
+      </h3>
+      <button title="Change the Theme" class="light">
+        Enable Dark Mode
+      </button>
+    </div>
+    
+  </div>
+  <div class="right-contents">
+    <h1 title="Nurfaiz Nuh aja dah cukup,&#010;kalo nama lengkapnya kepanjangan">
+      <span class="top black">
+        <span class="line">NURFA</span>IZ<br>
+      </span>
+      <span class="blue">NUH</span>
+    </h1>
+    <hr class="right">
+    <br><br>
+    <h2 class="right black" style="margin: 14px 0;" title="Brief Profile">
+      PROFIL
+    </h2>
+    <h3 class="right black" title="Profil singkat">
+      Mahasiswa Teknik Elektro. Tertarik pada Bengawan UV<br>
+      divisi Technical dengan sub-divisi Pemrograman.
+    </h3>
+    <hr class="right blue bg-b">
+    <br>
+    <h2 class="right black" title="Programming Skill">
+      KETERAMPILAN
+    </h2>
+    <h3 class="right black ul" title="Client-side">
+      Front-End:
+    </h3>
+    <ul class="black">
+      <li title="HyperText Markup Language">HTML</li>
+      <li title="Cascading StyleSheet">CSS</li>
+      <li title="JavaScript">JS</li>
+    </ul>
+    <h3 class="right black ul" title="Server-side">
+      Back-End:
+    </h3>
+    <ul class="black">
+      <li title="Server Connector">PHP</li>
+      <li title="Database Handling">MySQL</li>
+      <li title="Beginner Friendly">Python</li>
+      <li title="Hardcore Language">C++</li>
+      <li title="Game Dev Purposes">C#</li>
+    </ul>
+  </div>
+
+  <script>
+    var button = document.querySelector("button");
+
+    var lb = document.querySelector("div.left-bar");
+    var sp = document.querySelector("span.top");
+    var bd = document.querySelector("body");
+
+    var h3s = document.querySelectorAll("h3.right");
+    var h2s = document.querySelectorAll("h2.right");    
+    var uls = document.querySelectorAll("ul");
+    
+    button.addEventListener("click", event => {
+
+      if(event.target.classList.contains("light")){
+
+        event.target.textContent = "Enable Light Mode";
+        event.target.classList.replace("light", "dark");
+
+        lb.classList.replace("bg-b", "bg-sb");
+        sp.classList.replace("black", "white");
+        bd.classList.replace("bg-l", "bg-d");
+
+        h2s.forEach(h2 => {
+          h2.classList.replace("black", "white");
+        })
+        h3s.forEach(h3 => {
+          h3.classList.replace("black", "white");
+        })
+        uls.forEach(ul => {
+          ul.classList.replace("black", "white");
+        })
+      }
+      else if(event.target.classList.contains("dark")){
+
+        event.target.textContent = "Enable Dark Mode";
+        event.target.classList.replace("dark", "light");
+
+        lb.classList.replace("bg-sb", "bg-b");
+        sp.classList.replace("white", "black");
+        bd.classList.replace("bg-d", "bg-l");
+
+        h2s.forEach(h2 => {
+          h2.classList.replace("white", "black");
+        })
+        h3s.forEach(h3 => {
+          h3.classList.replace("white", "black");
+        })
+        uls.forEach(ul => {
+          ul.classList.replace("white", "black");
+        })
+      }
+    })
+  </script>
+</body>
+</html>
